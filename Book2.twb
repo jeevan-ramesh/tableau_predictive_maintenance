@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='airtemp' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='304.'>
+        <calculation class='tableau' formula='304.' />
+      </column>
+      <column caption='processtemp' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='310.'>
+        <calculation class='tableau' formula='310.' />
+      </column>
+      <column caption='rotspeed' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='1377.'>
+        <calculation class='tableau' formula='1377.' />
+      </column>
+      <column caption='toolwear' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='22.'>
+        <calculation class='tableau' formula='22.' />
+      </column>
+      <column caption='torque' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='47.3'>
+        <calculation class='tableau' formula='47.3' />
+      </column>
+      <column caption='type' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='1.'>
+        <calculation class='tableau' formula='1.' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (tableau_test_data)' inline='true' name='federated.1f3uaqx1d4d4t71f0gfe000yp8tp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_test_data' name='excel-direct.0276kqw01k1gag0zttvby127sk8b'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/predictive maintanance/tableau_test_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0276kqw01k1gag0zttvby127sk8b' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G2:no:A1:G2:0' header='yes' outcome='6'>
+            <column datatype='string' name='Type' ordinal='0' />
+            <column datatype='string' name='Air temperature K' ordinal='1' />
+            <column datatype='string' name='Process temperature K' ordinal='2' />
+            <column datatype='string' name='Rotational speed rpm' ordinal='3' />
+            <column datatype='string' name='Torque Nm' ordinal='4' />
+            <column datatype='string' name='Tool wear min' ordinal='5' />
+            <column datatype='string' name='Target' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G2:no:A1:G2:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Air temperature K</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Air temperature K]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Air temperature K</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Process temperature K</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Process temperature K]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Process temperature K</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rotational speed rpm</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rotational speed rpm]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rotational speed rpm</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Torque Nm</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Torque Nm]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Torque Nm</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tool wear min</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tool wear min]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Tool wear min</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='predict_function' datatype='real' name='[Calculation_1440870411663097856]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;from ast import literal_eval&#13;&#10;&#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 = literal_eval(_arg1[0])&#13;&#10;list2 = literal_eval(_arg2[0])&#13;&#10;list3 = literal_eval(_arg3[0])&#13;&#10;list4 = literal_eval(_arg4[0])&#13;&#10;list5 = literal_eval(_arg5[0])&#13;&#10;list6 = literal_eval(_arg6[0])&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Placeholder for storing predictions&#13;&#10;predictions = []&#13;&#10;&#13;&#10;# Loop through the lists and pass each set of inputs to the model&#13;&#10;for i in range(len(list1)):&#13;&#10;    data = {&#13;&#10;        &apos;Type&apos;: list1[i],&#13;&#10;        &apos;Air temperature K&apos;: list2[i],&#13;&#10;        &apos;Process temperature K&apos;: list3[i],&#13;&#10;        &apos;Rotational speed rpm&apos;: list4[i],&#13;&#10;        &apos;Torque Nm&apos;: list5[i],&#13;&#10;        &apos;Tool wear min&apos;: list6[i]&#13;&#10;    }&#13;&#10;&#13;&#10;    # Query the model with the current data and append the result to the predictions list&#13;&#10;    result = tabpy.query(&apos;predict_failure&apos;, data)&#13;&#10;    predictions.append(result[&apos;response&apos;][&apos;predictions&apos;][0])&#13;&#10;&#13;&#10;# Return the list of predictions&#13;&#10;return predictions&#13;&#10;&quot;,&#13;&#10;ATTR([Type]),ATTR([Air temperature K]),ATTR([Process temperature K]),ATTR([Rotational speed rpm]),ATTR([Torque Nm]),&#13;&#10;ATTR([Tool wear min]),ATTR([Target]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='predict_function2 (1) (1)' datatype='real' datatype-customized='true' name='[Calculation_1440870411768938497 1 1]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return str(prediction[0][&apos;response&apos;][1][0][1])&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='predict_function2 (1)' datatype='real' datatype-customized='true' name='[Calculation_1440870411768938497 1]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return str(prediction[0][&apos;response&apos;][1][0][0])&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='predict_function2' datatype='string' name='[Calculation_1440870411768938497]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return &apos;no failure&apos; if str(prediction[0][&apos;response&apos;][0][0]) == &apos;0&apos; else &apos;failure&apos;&#13;&#10;&#13;&#10;&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_1440870411778740226]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;from ast import literal_eval&#13;&#10;list2=literal_eval(_arg1[0])&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;return list2[0]&#13;&#10;&quot;,&#13;&#10;ATTR([Type]),ATTR([Air temperature K]),ATTR([Process temperature K]),ATTR([Rotational speed rpm]),ATTR([Torque Nm]),&#13;&#10;ATTR([Tool wear min]),ATTR([Target]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation2' datatype='real' name='[Calculation_1440870411827470339]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;# Define the list to store values&#13;&#10;list1 = []&#13;&#10;&#13;&#10;# Define the input list&#13;&#10;list2 = [1, 2, 3, 4, 5]&#13;&#10;&#13;&#10;# Loop through list2 and append values to list1&#13;&#10;for i in list2:&#13;&#10;    list1.append(i)&#13;&#10;&#13;&#10;# Return list1 as a tuple for Tableau&#13;&#10;return list1&#13;&#10;&quot;&#13;&#10;)' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_37B03B3F61A04B82B6327BC5C063C4AC]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1440870411768938497 1 1]' derivation='User' name='[usr:Calculation_1440870411768938497 1 1:nk]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1440870411768938497 1]' derivation='User' name='[usr:Calculation_1440870411768938497 1:nk]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111672321:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1 1:nk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111705091:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='airtemp' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='304.'>
+          <calculation class='tableau' formula='304.' />
+        </column>
+        <column caption='processtemp' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='310.'>
+          <calculation class='tableau' formula='310.' />
+        </column>
+        <column caption='rotspeed' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='1377.'>
+          <calculation class='tableau' formula='1377.' />
+        </column>
+        <column caption='toolwear' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='22.'>
+          <calculation class='tableau' formula='22.' />
+        </column>
+        <column caption='torque' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='47.3'>
+          <calculation class='tableau' formula='47.3' />
+        </column>
+        <column caption='type' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='1.'>
+          <calculation class='tableau' formula='1.' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_37B03B3F61A04B82B6327BC5C063C4AC'>
+            <properties context=''>
+              <relation connection='excel-direct.0276kqw01k1gag0zttvby127sk8b' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:G2:no:A1:G2:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Type' ordinal='0' />
+                  <column datatype='string' name='Air temperature K' ordinal='1' />
+                  <column datatype='string' name='Process temperature K' ordinal='2' />
+                  <column datatype='string' name='Rotational speed rpm' ordinal='3' />
+                  <column datatype='string' name='Torque Nm' ordinal='4' />
+                  <column datatype='string' name='Tool wear min' ordinal='5' />
+                  <column datatype='string' name='Target' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (tableau_test_data)' name='federated.1f3uaqx1d4d4t71f0gfe000yp8tp' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='airtemp' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='304.'>
+              <calculation class='tableau' formula='304.' />
+            </column>
+            <column caption='processtemp' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='310.'>
+              <calculation class='tableau' formula='310.' />
+            </column>
+            <column caption='rotspeed' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='1377.'>
+              <calculation class='tableau' formula='1377.' />
+            </column>
+            <column caption='toolwear' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='22.'>
+              <calculation class='tableau' formula='22.' />
+            </column>
+            <column caption='torque' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='47.3'>
+              <calculation class='tableau' formula='47.3' />
+            </column>
+            <column caption='type' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='1.'>
+              <calculation class='tableau' formula='1.' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1f3uaqx1d4d4t71f0gfe000yp8tp'>
+            <column datatype='string' name='[Air temperature K]' role='dimension' type='nominal' />
+            <column caption='0' datatype='integer' name='[Calculation_1316458474111672321]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='0' datatype='integer' name='[Calculation_1316458474111705091]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='predict_function2 (1) (1)' datatype='real' datatype-customized='true' name='[Calculation_1440870411768938497 1 1]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return str(prediction[0][&apos;response&apos;][1][0][1])&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='predict_function2 (1)' datatype='real' datatype-customized='true' name='[Calculation_1440870411768938497 1]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return str(prediction[0][&apos;response&apos;][1][0][0])&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='predict_function2' datatype='string' name='[Calculation_1440870411768938497]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='SCRIPT_STR(&#13;&#10;&quot;&#13;&#10;from tabpy.tabpy_tools.client import Client&#13;&#10;from ast import literal_eval&#13;&#10; &#13;&#10;# Connect to TabPy&#13;&#10;client = Client(&apos;http://localhost:9004/&apos;) &#13;&#10; &#13;&#10;# Convert string representations of lists into Python lists&#13;&#10;list1 =[_arg7[0]] &#13;&#10;list2 =[_arg8[0]]&#13;&#10;list3 =[_arg9[0]]&#13;&#10;list4 =[_arg10[0]]&#13;&#10;list5 =[_arg11[0]]&#13;&#10;list6 =[_arg12[0]]&#13;&#10;&#13;&#10;# Ensure all lists are of the same length&#13;&#10;assert len(list1) == len(list2) == len(list3) == len(list4) == len(list5) == len(list6), &apos;All input lists must have the same length&apos;&#13;&#10;&#13;&#10;# Query the TabPy deployed function &apos;predict_failure&apos;&#13;&#10;response = client.query(&apos;predict_failure&apos;, list1, list2, list3, list4, list5, list6)&#13;&#10;prediction=[response]&#13;&#10;# Return the list of predictions&#13;&#10;return &apos;no failure&apos; if str(prediction[0][&apos;response&apos;][0][0]) == &apos;0&apos; else &apos;failure&apos;&#13;&#10;&#13;&#10;&#13;&#10;&quot;,&#13;&#10;ATTR([Type]), ATTR([Air temperature K]), ATTR([Process temperature K]), ATTR([Rotational speed rpm]), &#13;&#10;ATTR([Torque Nm]), ATTR([Tool wear min]),&#13;&#10;[Parameters].[Parameter 6],[Parameters].[Parameter 1],[Parameters].[Parameter 2],[Parameters].[Parameter 3],[Parameters].[Parameter 5],[Parameters].[Parameter 4]  &#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Process temperature K]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Rotational speed rpm]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Tool wear min]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Torque Nm]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1316458474111672321]' derivation='Sum' name='[sum:Calculation_1316458474111672321:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1316458474111705091]' derivation='Sum' name='[sum:Calculation_1316458474111705091:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1440870411768938497 1 1]' derivation='User' name='[usr:Calculation_1440870411768938497 1 1:nk]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1440870411768938497 1]' derivation='User' name='[usr:Calculation_1440870411768938497 1:nk]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1440870411768938497]' derivation='User' name='[usr:Calculation_1440870411768938497:nk:2]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1:nk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1 1:nk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111705091:qk]' field-type='quantitative' fold='true' max='625' min='-1134' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111672321:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111705091:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111672321:qk]' field-type='quantitative' max='625' min='-1134' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='202' />
+            <format attr='height' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111672321:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]' />
+              <wedge-size column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.4364640712738037' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111705091:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497:nk:2]' />
+              <text column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1:nk]' />
+              <text column='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1 1:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497:nk:2]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='11' italic='true'>Fail Prob:</run>
+                <run bold='true' fontcolor='#e15759' fontsize='11'><![CDATA[<[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1 1:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='11' italic='true'>No Fail Prob:</run>
+                <run bold='true' fontcolor='#4e79a7' fontsize='11'><![CDATA[<[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.4198894500732422' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111672321:qk] + [federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[sum:Calculation_1316458474111705091:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4D7A56FA-B49D-4F42-A32E-CA4845DC1914}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='airtemp' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='304.'>
+          <calculation class='tableau' formula='304.' />
+        </column>
+        <column caption='processtemp' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='310.'>
+          <calculation class='tableau' formula='310.' />
+        </column>
+        <column caption='rotspeed' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='1377.'>
+          <calculation class='tableau' formula='1377.' />
+        </column>
+        <column caption='toolwear' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='22.'>
+          <calculation class='tableau' formula='22.' />
+        </column>
+        <column caption='torque' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='47.3'>
+          <calculation class='tableau' formula='47.3' />
+        </column>
+        <column caption='type' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='1.'>
+          <calculation class='tableau' formula='1.' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='83500' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 1' w='83500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='149' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='14900' x='84300' y='1000'>
+              <zone h='9000' id='8' name='Sheet 1' pane-specification-id='1' param='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]' type-v2='color' w='14900' x='84300' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='14900' x='84300' y='10000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='10' mode='type_in' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='14900' x='84300' y='17000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 3]' type-v2='paramctrl' w='14900' x='84300' y='24000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='12' mode='type_in' param='[Parameters].[Parameter 4]' type-v2='paramctrl' w='14900' x='84300' y='31000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='13' mode='type_in' param='[Parameters].[Parameter 5]' type-v2='paramctrl' w='14900' x='84300' y='38000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='14' mode='type_in' param='[Parameters].[Parameter 6]' type-v2='paramctrl' w='14900' x='84300' y='45000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 1' w='83500' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='8' name='Sheet 1' pane-specification-id='1' param='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]' type-v2='color' w='14900' x='84300' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='14900' x='84300' y='10000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='10' mode='type_in' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='14900' x='84300' y='17000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 3]' type-v2='paramctrl' w='14900' x='84300' y='24000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='12' mode='type_in' param='[Parameters].[Parameter 4]' type-v2='paramctrl' w='14900' x='84300' y='31000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='13' mode='type_in' param='[Parameters].[Parameter 5]' type-v2='paramctrl' w='14900' x='84300' y='38000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='14' mode='type_in' param='[Parameters].[Parameter 6]' type-v2='paramctrl' w='14900' x='84300' y='45000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{49DC1E1C-6102-415F-B289-7D6554F02CBA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 6]' type='parameter' />
+            <card pane-specification-id='1' param='[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Air temperature K:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Process temperature K:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Rotational speed rpm:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Tool wear min:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Torque Nm:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[none:Type:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411663097856:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1 1:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497 1:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497:nk]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411768938497:ok:1]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411778740226:nk:1]</field>
+            <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[usr:Calculation_1440870411778740226:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F7B4D491-AD78-4A8A-B515-8D8C7D9A5CAC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1f3uaqx1d4d4t71f0gfe000yp8tp].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{6795BE66-C3C3-44EF-8C03-455269FA4685}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
